@@ -6,9 +6,11 @@ const { readStorage, writeStorage } = require('./readerWriter');
 
 const { adapt } = require('./computerAdapter');
 const storageFilePath = path.join(__dirname, 'computers.json');
+const resource = 'computers';
 
 /* const { adapt } = require('./personAdapter');
-const storageFilePath = path.join(__dirname, 'employees.json'); */
+const storageFilePath = path.join(__dirname, 'employees.json'); 
+const resource = 'employees'; */
 
 const PRIMARY_KEY = 'id'; //hard coded, not nice
 
@@ -60,5 +62,6 @@ module.exports = {
     removeFromStorage,
     getKeys,
     updateStorage,
-    primary_key: PRIMARY_KEY
+    primary_key: PRIMARY_KEY,
+    resource
 }

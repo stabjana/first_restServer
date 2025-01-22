@@ -12,13 +12,18 @@ const {
     removeFromStorage,
     getKeys,
     updateStorage,
-    primary_key
+    primary_key,
+    resource
 } = require('./storageLayer');
 
 //Datastorage class
 
 module.exports = class Datastorage {
     //getters
+    get RESOURCE() {
+        return resource;
+    }
+
     get CODES() {
         return CODES;
     }

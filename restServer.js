@@ -13,7 +13,9 @@ const storage = new Datastorage();
 app.use(cors());
 app.use(express.json()); // need to get json data to server
 
-app.get('/api/computers', (req, res) =>
+app.get('/api', (req, res) => res.json(storage.RESOURCE)); // server based on the resource
+
+app.get(`/api/${storage.RESOURCE}`, (req, res) =>
     storage.getAll().then(result => res.json(result))
 );
 
