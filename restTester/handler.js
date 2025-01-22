@@ -10,15 +10,51 @@
 
     function init() {
         urifield = document.getElementById('urifield');
-        jsonarea == document.getElementById('jsonarea');
-        resultarea == document.getElementById('resultarea');
+        jsonarea = document.getElementById('jsonarea');
+        resultarea = document.getElementById('resultarea');
 
         document.getElementById('submit').addEventListener('click', send);
 
         document.getElementById('methods').addEventListener('change', choose);
 
         clearSelections();
-        urifield.value = 'http//localhost:3000/api/'
+        urifield.value = 'http://localhost:3000/api/'
+    }
+
+    function clearSelections() {
+        resultarea.textContent = '';
+        method = 'GET';
+        document.getElementById('get').checked = true;
+    }
+
+    function choose(e) {
+        resultarea.textContent = '';
+        method = e.target.value;
+    }
+
+    function showResult(data) {
+        resultarea.textContent = JSON.stringify(data, null, 4);
+    }
+
+    async function send() {
+        const options = {
+            method: method,
+            mode: 'cors'
+        }
+
+        if (method === 'PUT' || method === 'POST') {
+            options.body = jsonarea.value;
+            options.headers = { 'Content-Type': 'application/json' }
+        }
+
+        try {
+            const result = await fetch(urifield.value, options);
+            const data = await result.json();
+            showResult(data);
+
+        } catch (error) {
+            showResult({ type: 'error', message: error.message })
+        }
     }
 
 })();
