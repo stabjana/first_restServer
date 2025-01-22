@@ -3,9 +3,12 @@
 const path = require('path');
 
 const { readStorage, writeStorage } = require('./readerWriter');
-const { adapt } = require('./personAdapter');
 
-const storageFilePath = path.join(__dirname, 'employees.json');
+const { adapt } = require('./computerAdapter');
+const storageFilePath = path.join(__dirname, 'computers.json');
+
+/* const { adapt } = require('./personAdapter');
+const storageFilePath = path.join(__dirname, 'employees.json'); */
 
 const PRIMARY_KEY = 'id'; //hard coded, not nice
 

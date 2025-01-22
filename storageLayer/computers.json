@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name":"Big Machine",
+        "type":"supercomputer",
+        "price":30000
+    },
+    {
+        "id":2,
+        "name":"Computer",
+        "type":"laptop",
+        "price":3500
+    },
+    {
+        "id": 3,
+        "name": "HP",
+        "type": "Spectre x360",
+        "price": 1249
+    },
+    {
+        "id": 4,
+        "name": "Lenovo",
+        "type": "ThinkPad X1 Carbon",
+        "price": 1499
+    },
+    {
+        "id": 5,
+        "name": "Asus",
+        "type": "ROG Zephyrus G14",
+        "price": 2199
+    },
+    {
+        "id": 6,
+        "name": "Microsoft",
+        "type": "Surface Laptop Studio",
+        "price": 1799
+    }
+]
