@@ -158,5 +158,5 @@ const jsonData = await data.json();
 ```
 
 ```js
-fetch("http:localhost:3000/api/computers/2", options);
+fetch("http:localhost:3000/api/computers", options);
 ```
