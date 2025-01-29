@@ -1,15 +1,15 @@
 [
     {
-        "id":1,
-        "name":"Big Machine",
-        "type":"supercomputer",
-        "price":30000
+        "id": 1,
+        "name": "Big Machine",
+        "type": "supercomputer-toll",
+        "price": 30000
     },
     {
-        "id":2,
-        "name":"Computer",
-        "type":"laptop",
-        "price":3500
+        "id": 2,
+        "name": "Computer",
+        "type": "laptop",
+        "price": 3500
     },
     {
         "id": 3,
