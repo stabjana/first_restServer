@@ -30,9 +30,9 @@
         "price": 2199
     },
     {
-        "id": 6,
-        "name": "Microsoft",
-        "type": "Surface Laptop Studio",
-        "price": 1799
+        "id": 123,
+        "name": "Trompete",
+        "price": 2500,
+        "type": "Noisy thing"
     }
 ]
