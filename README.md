@@ -35,3 +35,9 @@ node restServer.js
 ## UI
 
 4. you can run this program also in your browser with the provided UI: just drag and drop the html file inside the folder: restTester to your browserwindow and put in the endpoint: "computers"
+
+## Implementing also frontend
+
+with Node. js Fetch API
+
+to be able to make API requests and responses on the server
